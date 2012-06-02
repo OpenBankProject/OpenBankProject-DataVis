@@ -10,14 +10,10 @@ class ApireaderController < ApplicationController
     #parsed_json["results"].each do |longUrl, convertedUrl|
     #print parsed_json[0]["obp_transaction"]["this_account"]["holder"]["holder"].inspect
     
-    #receivers = Array.new
-    i = 0
     parsed_json.each do |result|
-      i++
-      receiver = Receiver.create(:ReceiverID => i, :Name => result["obp_transaction"]["other_account"]["holder"]["holder"], :alias => result["obp_transaction"]["other_account"]["holder"]["alias"], :BankAccountNumber => "", :OpenCorporateURL => "")
-      receiver.save
-      #receivers << receiver
+      output = "#{result["obp_transaction"]["other_account"]["holder"]["holder"]}"
+      puts output
     end
-    #puts receivers.inspect
+    puts parsed_json.count
   end
 end
