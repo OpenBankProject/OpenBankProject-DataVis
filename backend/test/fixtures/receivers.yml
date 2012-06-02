@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  ReceiverID: 
+  name: MyString
+  alias: MyString
+  BankAccountNumber: 1
+  OpenCorporateURL: MyString
+
+two:
+  ReceiverID: 
+  name: MyString
+  alias: MyString
+  BankAccountNumber: 1
+  OpenCorporateURL: MyString

@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  CategoryID: 
+  CategoryName: MyString
+  ParentCategoryID: 1
+  Type: MyString
+
+two:
+  CategoryID: 
+  CategoryName: MyString
+  ParentCategoryID: 1
+  Type: MyString

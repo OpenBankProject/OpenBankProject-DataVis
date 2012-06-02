@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  BankID: 
+  BankName: MyString
+  BIC: MyString
+
+two:
+  BankID: 
+  BankName: MyString
+  BIC: MyString

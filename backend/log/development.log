@@ -1,0 +1,707 @@
+
+
+Started GET "/apireader" for 127.0.0.1 at 2012-06-02 13:38:31 +0200
+
+ActionController::RoutingError (No route matches "/apireader"):
+  
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/apireader" for 127.0.0.1 at 2012-06-02 13:38:58 +0200
+
+ActionController::RoutingError (No route matches "/apireader"):
+  
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/apireader" for 127.0.0.1 at 2012-06-02 13:39:40 +0200
+
+ActionController::RoutingError (No route matches "/apireader"):
+  
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/apireader" for 127.0.0.1 at 2012-06-02 13:39:42 +0200
+
+ActionController::RoutingError (No route matches "/apireader"):
+  
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/apireader" for 127.0.0.1 at 2012-06-02 13:39:44 +0200
+
+ActionController::RoutingError (No route matches "/apireader"):
+  
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/apireader" for 127.0.0.1 at 2012-06-02 13:40:29 +0200
+
+ActionController::RoutingError (No route matches "/apireader"):
+  
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/apireader" for 127.0.0.1 at 2012-06-02 13:43:30 +0200
+
+ActionController::RoutingError (No route matches "/apireader"):
+  
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/apireader" for 127.0.0.1 at 2012-06-02 13:43:32 +0200
+
+ActionController::RoutingError (No route matches "/apireader"):
+  
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/apireader" for 127.0.0.1 at 2012-06-02 13:43:40 +0200
+
+ActionController::RoutingError (No route matches "/apireader"):
+  
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/apireader" for 127.0.0.1 at 2012-06-02 13:47:25 +0200
+
+ActionController::RoutingError (No route matches "/apireader"):
+  
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/apireader" for 127.0.0.1 at 2012-06-02 13:52:15 +0200
+
+ActionController::RoutingError (No route matches "/apireader"):
+  
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 13:52:19 +0200
+  Processing by ApireaderController#index as HTML
+Rendered apireader/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 14:30:47 +0200
+  Processing by ApireaderController#index as HTML
+Rendered apireader/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apireader/readrest" for 127.0.0.1 at 2012-06-02 14:31:00 +0200
+
+ActionController::RoutingError (No route matches "/apireader/readrest"):
+  
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/apireader/getrest" for 127.0.0.1 at 2012-06-02 14:31:14 +0200
+
+ActionController::RoutingError (No route matches "/apireader/getrest"):
+  
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 14:32:39 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 2964ms
+
+NameError (undefined local variable or method `your_json_string' for #<ApireaderController:0x000001018a7ee0>):
+  app/controllers/apireader_controller.rb:8:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (17.1ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.1ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 14:33:23 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 5461ms
+
+Psych::SyntaxError (couldn't parse YAML at line 1 column 441):
+  app/controllers/apireader_controller.rb:8:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.1ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 14:36:29 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 8338ms
+
+Psych::SyntaxError (couldn't parse YAML at line 1 column 441):
+  app/controllers/apireader_controller.rb:8:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.7ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 14:36:45 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 15174ms
+
+Psych::SyntaxError (couldn't parse YAML at line 1 column 441):
+  app/controllers/apireader_controller.rb:8:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.3ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 14:38:18 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 14857ms
+
+Psych::SyntaxError (couldn't parse YAML at line 1 column 441):
+  app/controllers/apireader_controller.rb:8:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.0ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 14:40:42 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 11786ms
+
+Psych::SyntaxError (couldn't parse YAML at line 1 column 441):
+  app/controllers/apireader_controller.rb:7:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.0ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 14:44:22 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 9215ms
+
+Psych::SyntaxError (couldn't parse YAML at line 1 column 441):
+  app/controllers/apireader_controller.rb:7:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.1ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 14:48:27 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 6869ms
+
+Psych::SyntaxError (couldn't parse YAML at line 1 column 441):
+  app/controllers/apireader_controller.rb:7:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.9ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 14:49:26 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 5851ms
+
+TypeError (can't convert String into Integer):
+  app/controllers/apireader_controller.rb:10:in `[]'
+  app/controllers/apireader_controller.rb:10:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 14:51:47 +0200
+  Processing by ApireaderController#index as HTML
+Rendered apireader/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6451ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 14:53:28 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 6253ms
+
+TypeError (can't convert String into Integer):
+  app/controllers/apireader_controller.rb:10:in `[]'
+  app/controllers/apireader_controller.rb:10:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 14:57:34 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 5965ms
+
+TypeError (can't convert String into Integer):
+  app/controllers/apireader_controller.rb:11:in `[]'
+  app/controllers/apireader_controller.rb:11:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 14:58:23 +0200
+  Processing by ApireaderController#index as HTML
+Rendered apireader/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 5783ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 15:00:02 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 6307ms
+
+NameError (uninitialized constant ApireaderController::Site):
+  app/controllers/apireader_controller.rb:12:in `block in index'
+  app/controllers/apireader_controller.rb:11:in `each'
+  app/controllers/apireader_controller.rb:11:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 15:02:04 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 23092ms
+
+NameError (uninitialized constant ApireaderController::Site):
+  app/controllers/apireader_controller.rb:12:in `block in index'
+  app/controllers/apireader_controller.rb:11:in `each'
+  app/controllers/apireader_controller.rb:11:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 15:37:43 +0200
+
+SyntaxError (/Users/michael/RHoK12/code/dateProcess/app/controllers/apireader_controller.rb:11: syntax error, unexpected keyword_do_block, expecting keyword_end
+    parsed_json.each["obp_transaction"] do |longUrl, convertedUrl|
+                                          ^
+/Users/michael/RHoK12/code/dateProcess/app/controllers/apireader_controller.rb:11: syntax error, unexpected '|', expecting '='
+/Users/michael/RHoK12/code/dateProcess/app/controllers/apireader_controller.rb:17: syntax error, unexpected keyword_end, expecting $end):
+  
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 15:38:19 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 6238ms
+
+TypeError (can't convert String into Integer):
+  app/controllers/apireader_controller.rb:11:in `[]'
+  app/controllers/apireader_controller.rb:11:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 15:43:22 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 5731ms
+
+TypeError (can't convert String into Integer):
+  app/controllers/apireader_controller.rb:11:in `[]'
+  app/controllers/apireader_controller.rb:11:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 15:44:07 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 5739ms
+
+TypeError (can't convert String into Integer):
+  app/controllers/apireader_controller.rb:11:in `[]'
+  app/controllers/apireader_controller.rb:11:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 15:46:40 +0200
+  Processing by ApireaderController#index as HTML
+Rendered apireader/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6136ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 15:49:02 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 6257ms
+
+NoMethodError (undefined method `+' for #<Hash:0x00000102304e88>):
+  app/controllers/apireader_controller.rb:12:in `block in index'
+  app/controllers/apireader_controller.rb:11:in `each'
+  app/controllers/apireader_controller.rb:11:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.1ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 15:50:15 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 6231ms
+
+NoMethodError (undefined method `+' for #<Hash:0x00000102398a48>):
+  app/controllers/apireader_controller.rb:12:in `block in index'
+  app/controllers/apireader_controller.rb:11:in `each'
+  app/controllers/apireader_controller.rb:11:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.2ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 15:50:27 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 6496ms
+
+NoMethodError (undefined method `+' for #<Hash:0x000001019d9188>):
+  app/controllers/apireader_controller.rb:12:in `block in index'
+  app/controllers/apireader_controller.rb:11:in `each'
+  app/controllers/apireader_controller.rb:11:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.6ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 15:51:18 +0200
+
+SyntaxError (/Users/michael/RHoK12/code/dateProcess/app/controllers/apireader_controller.rb:12: syntax error, unexpected tIDENTIFIER, expecting keyword_end):
+  
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.9ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 15:52:21 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 6643ms
+
+NoMethodError (undefined method `+' for #<Hash:0x00000100d17288>):
+  app/controllers/apireader_controller.rb:12:in `block in index'
+  app/controllers/apireader_controller.rb:11:in `each'
+  app/controllers/apireader_controller.rb:11:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 15:54:15 +0200
+  Processing by ApireaderController#index as HTML
+Rendered apireader/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6515ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 15:56:58 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 7483ms
+
+TypeError (can't convert String into Integer):
+  app/controllers/apireader_controller.rb:11:in `[]'
+  app/controllers/apireader_controller.rb:11:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 15:57:36 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 6130ms
+
+NoMethodError (undefined method `obp_transaction' for #<Array:0x00000100ca77f8>):
+  app/controllers/apireader_controller.rb:11:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 15:59:31 +0200
+  Processing by ApireaderController#index as HTML
+Rendered apireader/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6244ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 16:00:47 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 5690ms
+
+NoMethodError (undefined method `obp_transaction' for #<Array:0x000001018e3d50>):
+  app/controllers/apireader_controller.rb:11:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 16:01:16 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 6113ms
+
+TypeError (can't convert String into Integer):
+  app/controllers/apireader_controller.rb:11:in `[]'
+  app/controllers/apireader_controller.rb:11:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 16:02:22 +0200
+  Processing by ApireaderController#index as HTML
+Rendered apireader/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6504ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 16:02:58 +0200
+  Processing by ApireaderController#index as HTML
+Rendered apireader/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6377ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 16:03:53 +0200
+  Processing by ApireaderController#index as HTML
+Rendered apireader/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7047ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 16:11:32 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 5851ms
+
+NoMethodError (undefined method `each' for "MUSIC PICTURES LIMITED":String):
+  app/controllers/apireader_controller.rb:12:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 16:12:41 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 6085ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/apireader_controller.rb:13:in `block in index'
+  app/controllers/apireader_controller.rb:12:in `each'
+  app/controllers/apireader_controller.rb:12:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 16:13:18 +0200
+  Processing by ApireaderController#index as HTML
+Rendered apireader/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6223ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 16:14:06 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 285ms
+
+OpenURI::HTTPError (503 Service Temporarily Unavailable):
+  app/controllers/apireader_controller.rb:8:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 16:14:10 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 228ms
+
+OpenURI::HTTPError (503 Service Temporarily Unavailable):
+  app/controllers/apireader_controller.rb:8:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.6ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 16:14:12 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 447ms
+
+OpenURI::HTTPError (503 Service Temporarily Unavailable):
+  app/controllers/apireader_controller.rb:8:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.2ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 16:14:36 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 605ms
+
+OpenURI::HTTPError (503 Service Temporarily Unavailable):
+  app/controllers/apireader_controller.rb:8:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.5ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 16:14:37 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 246ms
+
+OpenURI::HTTPError (503 Service Temporarily Unavailable):
+  app/controllers/apireader_controller.rb:8:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (16.4ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.5ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 16:15:30 +0200
+  Processing by ApireaderController#index as HTML
+Rendered apireader/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8512ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 16:16:52 +0200
+  Processing by ApireaderController#index as HTML
+Rendered apireader/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7510ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 16:21:22 +0200
+  Processing by ApireaderController#index as HTML
+Rendered apireader/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6789ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 16:39:01 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 8579ms
+
+ActiveRecord::StatementInvalid (Could not find table 'receivers'):
+  app/controllers/apireader_controller.rb:16:in `new'
+  app/controllers/apireader_controller.rb:16:in `block in index'
+  app/controllers/apireader_controller.rb:13:in `each'
+  app/controllers/apireader_controller.rb:13:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.7ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 16:44:46 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 8540ms
+
+NoMethodError (undefined method `+@' for "DEUTSCHE POST AG, SSC ACC S":String):
+  app/controllers/apireader_controller.rb:17:in `block in index'
+  app/controllers/apireader_controller.rb:15:in `each'
+  app/controllers/apireader_controller.rb:15:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (23.7ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.6ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 16:46:42 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 6918ms
+
+NoMethodError (undefined method `+@' for "DEUTSCHE POST AG, SSC ACC S":String):
+  app/controllers/apireader_controller.rb:17:in `block in index'
+  app/controllers/apireader_controller.rb:15:in `each'
+  app/controllers/apireader_controller.rb:15:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (22.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.4ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.2ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 16:47:22 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 8250ms
+
+ActiveRecord::StatementInvalid (Could not find table 'receivers'):
+  app/controllers/apireader_controller.rb:17:in `block in index'
+  app/controllers/apireader_controller.rb:15:in `each'
+  app/controllers/apireader_controller.rb:15:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.9ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 16:48:11 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 6748ms
+
+ActiveRecord::StatementInvalid (Could not find table 'receivers'):
+  app/controllers/apireader_controller.rb:17:in `block in index'
+  app/controllers/apireader_controller.rb:15:in `each'
+  app/controllers/apireader_controller.rb:15:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 16:48:48 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 8023ms
+
+ActiveRecord::StatementInvalid (Could not find table 'receivers'):
+  app/controllers/apireader_controller.rb:17:in `block in index'
+  app/controllers/apireader_controller.rb:15:in `each'
+  app/controllers/apireader_controller.rb:15:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.6ms)
+
+
+Started GET "/apireader/index" for 127.0.0.1 at 2012-06-02 16:49:27 +0200
+  Processing by ApireaderController#index as HTML
+Completed   in 7438ms
+
+ActiveRecord::StatementInvalid (Could not find table 'receivers'):
+  app/controllers/apireader_controller.rb:17:in `block in index'
+  app/controllers/apireader_controller.rb:15:in `each'
+  app/controllers/apireader_controller.rb:15:in `index'
+
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /Users/michael/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.6ms)

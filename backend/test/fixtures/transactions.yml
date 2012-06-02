@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  TransactionID: 
+  Amount: 1.5
+  Currency: MyString
+
+two:
+  TransactionID: 
+  Amount: 1.5
+  Currency: MyString
