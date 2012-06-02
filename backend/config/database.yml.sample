@@ -2,19 +2,19 @@ development:
   adapter: postgresql
   database: openbank
   username: michael
-  password: 
+  password: m
   host: localhost
 
 test:
   adapter: postgresql
   database: openbank
   username: michael
-  password: 
+  password: m
   host: localhost
 
 production:
   adapter: postgresql
   database: openbank
   username: michael
-  password: 
+  password: m
   host: localhost
