@@ -1,7 +1,6 @@
 CREATE TABLE bank (
   bank_id INTEGER PRIMARY KEY,
-  name VARCHAR(200),
-  bic VARCHAR(11)
+  name VARCHAR(200)
 );
 
 CREATE TABLE date (
@@ -9,22 +8,11 @@ CREATE TABLE date (
   date TIMESTAMP
 );
 
-CREATE TABLE sender (
-  sender_id INTEGER PRIMARY KEY,
+CREATE TABLE transaction_partner (
+  tp_id INTEGER PRIMARY KEY,
   name VARCHAR(200),
   alias VARCHAR(200),
-  bank_id INTEGER REFERENCES bank(bank_id) NOT NULL,
-  iban VARCHAR(34),
-  opencorporateurl VARCHAR(200)
-);
-
-CREATE TABLE receiver (
-  receiver_id INTEGER PRIMARY KEY,
-  name VARCHAR(200),
-  alias VARCHAR(200),
-  bank_id INTEGER REFERENCES bank(bank_id) NOT NULL,
-  iban VARCHAR(34),
-  opencorporateurl VARCHAR(200)
+  bank_id INTEGER REFERENCES bank(bank_id) NOT NULL
 );
 
 CREATE TABLE category (
@@ -36,10 +24,10 @@ CREATE TABLE category (
 CREATE TABLE transaction (
   transaction_id INTEGER PRIMARY KEY,
   date_id INTEGER REFERENCES date(date_id) NOT NULL,
-  sender_id INTEGER REFERENCES sender(sender_id) NOT NULL,
-  receiver_id INTEGER REFERENCES receiver(receiver_id) NOT NULL,
+  tp_id INTEGER REFERENCES transaction_partner(tp_id) NOT NULL,
   category_id INTEGER REFERENCES category(category_id) NOT NULL,
-  amount FLOAT NOT NULL,
+  amount DOUBLE PRECISION NOT NULL,
   currency VARCHAR(100),
-  type VARCHAR(7) CHECK (type IN ('income','expense'))
+  transaction_type VARCHAR(7) CHECK (type IN ('income','expense')),
+  name VARCHAR(200)
 );
