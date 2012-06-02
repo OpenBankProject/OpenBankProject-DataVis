@@ -1,8 +1,14 @@
-= Folder structure
+# OpenBankProject DataViz
+Project statement
 
-== Frontend
+## Goals
+yadda
+
+## Folder structure
+
+`/Frontend`  
 Here the HTML 5 goes
 
 
-== Backend
+`/Backend`  
 Here the rails foo goes
