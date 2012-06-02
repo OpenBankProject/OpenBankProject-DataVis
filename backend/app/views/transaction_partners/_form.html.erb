@@ -1,0 +1,25 @@
+<%= form_for(@transaction_partner) do |f| %>
+  <% if @transaction_partner.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@transaction_partner.errors.count, "error") %> prohibited this transaction_partner from being saved:</h2>
+
+      <ul>
+      <% @transaction_partner.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :account_holder %><br />
+    <%= f.text_field :account_holder %>
+  </div>
+  <div class="field">
+    <%= f.label :bank_name %><br />
+    <%= f.text_field :bank_name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

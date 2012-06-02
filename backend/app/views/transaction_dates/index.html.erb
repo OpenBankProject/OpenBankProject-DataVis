@@ -1,0 +1,27 @@
+<h1>Listing transaction_dates</h1>
+
+<table>
+  <tr>
+    <th>Day</th>
+    <th>Month</th>
+    <th>Year</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @transaction_dates.each do |transaction_date| %>
+  <tr>
+    <td><%= transaction_date.day %></td>
+    <td><%= transaction_date.month %></td>
+    <td><%= transaction_date.year %></td>
+    <td><%= link_to 'Show', transaction_date %></td>
+    <td><%= link_to 'Edit', edit_transaction_date_path(transaction_date) %></td>
+    <td><%= link_to 'Destroy', transaction_date, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Transaction date', new_transaction_date_path %>

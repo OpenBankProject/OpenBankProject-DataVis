@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Day:</b>
+  <%= @transaction_date.day %>
+</p>
+
+<p>
+  <b>Month:</b>
+  <%= @transaction_date.month %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%= @transaction_date.year %>
+</p>
+
+
+<%= link_to 'Edit', edit_transaction_date_path(@transaction_date) %> |
+<%= link_to 'Back', transaction_dates_path %>
