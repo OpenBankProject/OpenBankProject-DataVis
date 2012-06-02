@@ -1,8 +1,8 @@
-= Folder structure
+# Folder structure
 
-== Frontend
+`/Frontend`  
 Here the HTML 5 goes
 
 
-== Backend
+`/Backend`  
 Here the rails foo goes
