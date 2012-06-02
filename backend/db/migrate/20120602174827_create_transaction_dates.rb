@@ -1,14 +1,11 @@
 class CreateTransactionDates < ActiveRecord::Migration
-  def self.up
+  def change
     create_table :transaction_dates do |t|
-      t.primary_key :DateID
-      t.date :Date
+      t.integer :day
+      t.integer :month
+      t.integer :year
 
       t.timestamps
     end
-  end
-
-  def self.down
-    drop_table :transaction_dates
   end
 end

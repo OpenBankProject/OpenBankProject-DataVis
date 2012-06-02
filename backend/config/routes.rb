@@ -1,4 +1,12 @@
 OpbDataviz::Application.routes.draw do
+  resources :categories
+
+  resources :transaction_dates
+
+  resources :transactions
+
+  resources :transaction_partners
+
   get "apireader/index"
 
   # The priority is based upon order of creation:

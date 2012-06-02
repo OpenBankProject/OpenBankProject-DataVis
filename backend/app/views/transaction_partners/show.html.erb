@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Account holder:</b>
+  <%= @transaction_partner.account_holder %>
+</p>
+
+<p>
+  <b>Bank name:</b>
+  <%= @transaction_partner.bank_name %>
+</p>
+
+
+<%= link_to 'Edit', edit_transaction_partner_path(@transaction_partner) %> |
+<%= link_to 'Back', transaction_partners_path %>

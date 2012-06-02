@@ -1,13 +1,11 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  CategoryID: 
-  CategoryName: MyString
-  ParentCategoryID: 1
-  Type: MyString
+  category_type: MyString
+  parent_category_id: 1
+  category_name: MyString
 
 two:
-  CategoryID: 
-  CategoryName: MyString
-  ParentCategoryID: 1
-  Type: MyString
+  category_type: MyString
+  parent_category_id: 1
+  category_name: MyString
