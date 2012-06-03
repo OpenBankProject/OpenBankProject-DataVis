@@ -8,7 +8,7 @@ OpbDataviz::Application.routes.draw do
   resources :transaction_partners
 
   get "apireader/index"
-
+  match "apireader/get_payees/:category" => "apireader#get_payees" 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

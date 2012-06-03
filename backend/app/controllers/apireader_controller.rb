@@ -41,6 +41,18 @@ class ApireaderController < ApplicationController
       format.json { render :json => data }
     end
   end
+  
+  def get_payees
+    cat = Category.find_by_category_name(params[:category])
+    data = Array.new
+    cat.transactions.group_by(&:account_holder).each do |holder, transactions|
+      data_item = Hash.new
+      data_item[:name] = holder
+      data_item[:volume] = transactions.collect{|t| t.amount.abs}.inject(:+)
+      data << data_item
+    end
+    render :json => data
+  end
 
   def test
     # categories = _get_categories - this works
