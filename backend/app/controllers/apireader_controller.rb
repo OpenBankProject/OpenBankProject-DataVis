@@ -36,8 +36,9 @@ class ApireaderController < ApplicationController
       holder = transaction["obp_transaction"]["this_account"]["holder"]["holder"]
       tr = Transaction.new :account_holder => holder,
                            :amount => amount.to_i.abs
-
       tr.transaction_uuid       = transaction["obp_transaction"]["obp_transaction_uuid"]
+      # we need the balance from the api!
+      #tr.balance                = transaction["obp_transaction"]["details"]["details"]
       tr.category_id            = _get_category_id(partner, amount)
       tr.transaction_date_id    = td.id
       tr.transaction_partner_id = tp.id
@@ -64,10 +65,31 @@ class ApireaderController < ApplicationController
     render :json => data
   end
 
+  def past10days
+    data = Array.new
+    data.push Hash[:name => '05/01', :income => 2000, :expenses => 1000, :balance => 12000]
+    data.push Hash[:name => '05/02', :income => 1000, :expenses => 300, :balance => 11000]
+    data.push Hash[:name => '05/03', :income => 4000, :expenses => 2000, :balance => 12000]
+    data.push Hash[:name => '05/04', :income => 2000, :expenses => 100, :balance => 13000]
+    data.push Hash[:name => '05/05', :income => 1000, :expenses => 50, :balance => 22000]
+    data.push Hash[:name => '05/06', :income => 5000, :expenses => 100, :balance => 210000]
+    data.push Hash[:name => '05/07', :income => 3000, :expenses => 2000, :balance => 250000]
+    data.push Hash[:name => '05/08', :income => 5000, :expenses => 1000, :balance => 270000]
+    data.push Hash[:name => '05/09', :income => 7000, :expenses => 4000, :balance => 280000]
+    data.push Hash[:name => '05/10', :income => 8000, :expenses => 100, :balance => 290000]
+    render :json => data
+  end
+
+  def average_past_year
+    data = Array.new
+    data.push Hash[:expenses => 50]
+    render :json => data
+  end
+
   def test
     # categories = _get_categories - this works
     # _update_categories # - this works
-    puts get_holder_to_category_id_map #- this works
+    # puts get_holder_to_category_id_map #- this works
   end
 
   def _get_category_id(account_holder, amount)

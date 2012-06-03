@@ -18,9 +18,23 @@ Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
       google.load("visualization", "1", {packages:["corechart"]});
     </script>
     <script type="text/javascript">
-      function drawVisualization() {
+    
+    
+    $(document).ready(function(){
+      $('#select').on('change', function(evt){
+        drawVisualization("/apireader/get_payees/"+$('#select').val())
+      })
+    $.getJSON("/apireader/get_categories.json", function(json){
+      $.each(json, function(i,item){
+          $('#select').append(new Option(item.name, item.name, true, true))
+        });
+      });
+       drawVisualization("/apireader/get_payees/Sales")
+    });
+
+      function drawVisualization(url) {
         // Create and populate the data table.
-         $.getJSON("by_payee.json", function(json){
+         $.getJSON(url, function(json){
 
           data = new google.visualization.DataTable()
           data.addColumn('string', 'Payee');
@@ -40,11 +54,15 @@ Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
                 );
         });
       }
-      google.setOnLoadCallback(drawVisualization);
+      //google.setOnLoadCallback(drawVisualization);
+
     </script>
   </head>
   <body style="font-family: Arial;border: 0 none;">
     <div id="visualization" style="width: 900px; height: 500px;"></div>
+    <select id="select">
+  
+</select>
   </body>
 </html>
 ​
