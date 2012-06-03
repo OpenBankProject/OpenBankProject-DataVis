@@ -69,6 +69,25 @@ class ApireaderController < ApplicationController
     # _update_categories # - this works
     puts get_holder_to_category_id_map #- this works
   end
+  
+  def get_monthly_balance
+    #TransactionDate.find_by_sql(:day, :month, :year, "SUM() as sum_images_count").group(:month, :province, :country).order("sum_images_count DESC")
+    #.find(:group => [:year, :month], :order => [:year, :month]) do |transaction|
+    #  puts transaction.inspect
+    #end
+    data = Array.new
+    
+    data.push Hash[:name => "2012/01", :income => 6000, :expenses => 4000, :balance => 2000]
+    data.push Hash[:name => "2012/02", :income => 4000, :expenses => 4000, :balance => 2000]
+    data.push Hash[:name => "2012/01", :income => 2000, :expenses => 2000, :balance => 2000]
+    data.push Hash[:name => "2012/03", :income => 7000, :expenses => 6000, :balance => 3000]
+    data.push Hash[:name => "2012/04", :income => 1000, :expenses => 2000, :balance => 2000]
+    data.push Hash[:name => "2012/05", :income => 3000, :expenses => 1000, :balance => 4000]
+    data.push Hash[:name => "2012/06", :income => 6000, :expenses => 4000, :balance => 6000]
+    
+    render :json => data
+  end
+  
 
   def _get_category_id(account_holder, amount)
     @holder_to_category_id_map ||= get_holder_to_category_id_map

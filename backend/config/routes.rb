@@ -9,6 +9,7 @@ OpbDataviz::Application.routes.draw do
 
   get "apireader/index"
   match "apireader/get_payees/:category" => "apireader#get_payees" 
+  match "apireader/categories/by/year" => "apireader#get_monthly_balance"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
