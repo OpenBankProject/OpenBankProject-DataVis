@@ -55,9 +55,9 @@ class ApireaderController < ApplicationController
   def get_payees
     cat = Category.find_by_category_name(params[:category])
     data = Array.new
-    cat.transactions.group_by(&:account_holder).each do |holder, transactions|
+    cat.transactions.group_by(&:transaction_partner_id).each do |holder, transactions|
       data_item = Hash.new
-      data_item[:name] = holder
+      data_item[:name] = TransactionPartner.find_by_id(holder).account_holder
       data_item[:volume] = transactions.collect{|t| t.amount.abs}.inject(:+)
       data << data_item
     end
