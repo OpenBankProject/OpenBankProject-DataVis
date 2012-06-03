@@ -20,7 +20,7 @@ Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
     <script type="text/javascript">
       function drawVisualization() {
 
-     $.getJSON("by_month.json", function(json){
+     $.getJSON("/apireader/categories/by/year", function(json){
           data = new google.visualization.DataTable()
           data.addColumn('string', 'Month');
           data.addColumn('number', 'Income');

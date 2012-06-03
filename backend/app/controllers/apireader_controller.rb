@@ -67,16 +67,16 @@ class ApireaderController < ApplicationController
 
   def past10days
     data = Array.new
-    data.push Hash[:name => '05/01', :income => 2000, :expenses => 1000, :balance => 12000]
-    data.push Hash[:name => '05/02', :income => 1000, :expenses => 300, :balance => 11000]
-    data.push Hash[:name => '05/03', :income => 4000, :expenses => 2000, :balance => 12000]
-    data.push Hash[:name => '05/04', :income => 2000, :expenses => 100, :balance => 13000]
-    data.push Hash[:name => '05/05', :income => 1000, :expenses => 50, :balance => 22000]
-    data.push Hash[:name => '05/06', :income => 5000, :expenses => 100, :balance => 210000]
-    data.push Hash[:name => '05/07', :income => 3000, :expenses => 2000, :balance => 250000]
-    data.push Hash[:name => '05/08', :income => 5000, :expenses => 1000, :balance => 270000]
-    data.push Hash[:name => '05/09', :income => 7000, :expenses => 4000, :balance => 280000]
-    data.push Hash[:name => '05/10', :income => 8000, :expenses => 100, :balance => 290000]
+    data.push Hash[:name => '05/01', :income => 1500, :expenses => 1000, :balance => 10000]
+    data.push Hash[:name => '05/02', :income => 0,    :expenses => 5000, :balance => 5000]
+    data.push Hash[:name => '05/03', :income => 0,    :expenses => 2000, :balance => 3000]
+    data.push Hash[:name => '05/04', :income => 2300, :expenses => 1000, :balance => 4300]
+    data.push Hash[:name => '05/05', :income => 0,    :expenses => 0,    :balance => 4300]
+    data.push Hash[:name => '05/06', :income => 6200, :expenses => 100,  :balance => 10400]
+    data.push Hash[:name => '05/07', :income => 1000, :expenses => 2000, :balance => 9400]
+    data.push Hash[:name => '05/08', :income => 0,    :expenses => 1000, :balance => 8400]
+    data.push Hash[:name => '05/09', :income => 0,    :expenses => 4000, :balance => 4400]
+    data.push Hash[:name => '05/10', :income => 2200, :expenses => 100,  :balance => 6500]
     render :json => data
   end
 
@@ -198,7 +198,7 @@ class ApireaderController < ApplicationController
         expenses_sum += transaction.amount
       end
     end
-    data << _get_data_item("Expenses",  expenses_sum)
+    data << _get_data_item("Expense",  expenses_sum)
 
     inc_cat = Category.find_by_category_name("Income")
     inc_sub_cat = Category.find_all_by_parent_category_id(inc_cat.id)

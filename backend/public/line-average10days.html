@@ -20,7 +20,7 @@ Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
     <script type="text/javascript">
       function drawVisualization() {
 
-     $.getJSON("10days.json", function(json){
+     $.getJSON("/apireader/past10days.json", function(json){
           data = new google.visualization.DataTable()
           data.addColumn('string', 'day');
           data.addColumn('number', 'Income');

@@ -49,7 +49,8 @@ Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
         new google.visualization.PieChart(document.getElementById('visualization')).
             draw(data, {
             title: 'Account',
-            pieSliceText: 'value'
+            pieSliceText: 'value',
+            sliceVisibilityThreshold: 1/100,
           }
                 );
         });

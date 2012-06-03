@@ -31,7 +31,7 @@ Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
           row.push(["ALL", null, 0, 0 ])
           $.each(json, function(i,item){
             if (item.parent === null) item.parent = "ALL"
-            row.push([item.name, item.parent, item.volume, item.heat]);
+            row.push([item.name, item.parent, item.volume, parseInt(Math.random()*200)-100]);
           });
           console.log(row)
           data.addRows(row);
