@@ -35,8 +35,9 @@ class ApireaderController < ApplicationController
       tr = Transaction.new :account_holder => holder,
                            :amount => amount.to_i.abs
 
-      tr.category_id = _get_category_id(partner, amount)
-      tr.transaction_date_id = td.id
+      tr.transaction_uuid       = transaction["obp_transaction"]["obp_transaction_uuid"]
+      tr.category_id            = _get_category_id(partner, amount)
+      tr.transaction_date_id    = td.id
       tr.transaction_partner_id = tp.id
       tr.save
     end
