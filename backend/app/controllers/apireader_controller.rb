@@ -25,7 +25,7 @@ class ApireaderController < ApplicationController
       cat.save
       holder = transaction["obp_transaction"]["this_account"]["holder"]["holder"]
       
-      tr = Transaction.new(:account_holder => holder, :amount => amount.abs)
+      tr = Transaction.new(:account_holder => holder, :amount => amount.to_i.abs)
       tr.category_id = cat.id
       tr.transaction_date_id = td.id
       tr.transaction_partner_id = tp.id
