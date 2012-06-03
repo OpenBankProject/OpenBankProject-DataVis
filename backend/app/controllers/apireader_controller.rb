@@ -149,12 +149,25 @@ class ApireaderController < ApplicationController
 
   def _get_category_data
     data = Array.new
+    exp_cat = Category.find_by_category_name("Expense")
+    exp_sub_cat = Category.find_all_by_parent_category_id(exp_cat.id)
+    expenses_sum = 0
+    exp_sub_cat.each do |category|
+      category.transactions.each do |transaction|
+        expenses_sum += transaction.amount
+      end
+    end
+    data << _get_data_item("Expenses",  expenses_sum)
 
-    expenses = Transaction.find_by_sql("SELECT sum(amount) as expenses FROM transactions WHERE amount < 0").first.expenses
-    data << _get_data_item("Expenses", expenses)
-
-    income = Transaction.find_by_sql("SELECT sum(amount) as income FROM transactions WHERE amount > 0").first.income
-    data << _get_data_item("Income", income)
+    inc_cat = Category.find_by_category_name("Income")
+    inc_sub_cat = Category.find_all_by_parent_category_id(inc_cat.id)
+    income_sum = 0
+    inc_sub_cat.each do |category|
+      category.transactions.each do |transaction|
+        income_sum += transaction.amount
+      end
+    end
+    data << _get_data_item("Income", income_sum)
 
     categories = Category.find(:all)
 
