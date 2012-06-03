@@ -10,6 +10,8 @@ class ApireaderController < ApplicationController
   def update
     Transaction.delete_all
     TransactionPartner.delete_all
+    TransactionDate.delete_all
+    _update_categories
 
     file_handle = open("https://demo.openbankproject.com/api/accounts/tesobe/anonymous")
     transactions = ActiveSupport::JSON.decode(file_handle)

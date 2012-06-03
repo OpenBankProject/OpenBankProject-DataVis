@@ -15,40 +15,37 @@ Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
 "></script>
 
     <script type="text/javascript">
-      google.load("visualization", "1", {packages:["treemap"]});
+      google.load('visualization', '1', {packages: ['corechart']});
     </script>
     <script type="text/javascript">
       function drawVisualization() {
-         //$.getJSON("http://obp-dataviz.herokuapp.com/apireader/index2.json", function(json){
-          $.getJSON("by_category.json", function(json){
 
+     $.getJSON("10days.json", function(json){
           data = new google.visualization.DataTable()
-          data.addColumn('string', 'Category');
-          data.addColumn('string', 'Parent');
-          data.addColumn('number', 'Volume')
-          data.addColumn('number', 'Heat') // in = +1, out = -1
+          data.addColumn('string', 'day');
+          data.addColumn('number', 'Income');
+          data.addColumn('number', 'Expenses')
 
           var row = [];
-          row.push(["ALL", null, 0, 0 ])
           $.each(json, function(i,item){
-            if (item.parent === null) item.parent = "ALL"
-            row.push([item.name, item.parent, item.volume, item.heat]);
+            row.push([item.name, item.income, item.expenses]);
           });
           console.log(row)
           data.addRows(row);
-
+        
         // Create and draw the visualization.
-        new google.visualization.TreeMap(document.getElementById('visualization')).
-            draw(data, {minColor: '#ffa500',
-          midColor: '#ddd',
-          maxColor: '#0d0',
-          headerHeight: 15,
-          fontColor: 'black',
-          showScale: false,
-          maxPostDepth: '2'}
+        new google.visualization.LineChart(document.getElementById('visualization')).
+            draw(data,          {title : 'Income & Expenses',
+              curveType: 'function'
+          }
                 );
-        });       
+        });
+
+
+       
       }
+      
+
       google.setOnLoadCallback(drawVisualization);
     </script>
   </head>
