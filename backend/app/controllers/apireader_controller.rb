@@ -8,28 +8,36 @@ YAML::ENGINE.yamler = 'syck'
 class ApireaderController < ApplicationController
 
   def update
+    Transaction.delete_all
+    TransactionPartner.delete_all
+
     file_handle = open("https://demo.openbankproject.com/api/accounts/tesobe/anonymous")
     transactions = ActiveSupport::JSON.decode(file_handle)
 
     transactions.each do |transaction|
-      tp = TransactionPartner.new :account_holder => transaction["obp_transaction"]["other_account"]["holder"]["holder"],
-                                  :bank_name => "Bank"
-      tp.save!
+      partner = transaction["obp_transaction"]["other_account"]["holder"]["holder"]
+      tp = TransactionPartner.find_by_account_holder partner
+
+      if tp.nil?
+        tp = TransactionPartner.new :account_holder => partner
+        tp.save!
+      end
 
       transaction_date = transaction["obp_transaction"]["details"]["completed"]
-      d = Date.strptime transaction_date, '%Y-%m-%d'
-      td = TransactionDate.new :day => d.mday,
-                               :month => d.mon,
-                               :year => d.year
+      date = Date.strptime transaction_date, '%Y-%m-%d'
+      td = TransactionDate.new :day => date.mday,
+                               :month => date.mon,
+                               :year => date.year
       td.save!
 
-      amount = amount.to_i.abs
+      amount = transaction["obp_transaction"]["details"]["value"]["amount"].to_i
       holder = transaction["obp_transaction"]["this_account"]["holder"]["holder"]
       tr = Transaction.new :account_holder => holder,
-                           :amount => amount
+                           :amount => amount.to_i.abs
 
-      tr.category_id = _get_category_id holder, amount
-      tr.transaction_date_id = td.id
+      tr.transaction_uuid       = transaction["obp_transaction"]["obp_transaction_uuid"]
+      tr.category_id            = _get_category_id(partner, amount)
+      tr.transaction_date_id    = td.id
       tr.transaction_partner_id = tp.id
       tr.save
     end
@@ -56,31 +64,57 @@ class ApireaderController < ApplicationController
 
   def test
     # categories = _get_categories - this works
-    _update_categories # - this works
+    # _update_categories # - this works
+    puts get_holder_to_category_id_map #- this works
   end
 
   def _get_category_id(account_holder, amount)
-    holder_to_category_map ||= get_holder_to_category_map
+    @holder_to_category_id_map ||= get_holder_to_category_id_map
 
-    if @cats[account_holder].nil?
-      return "others"
+    puts account_holder
+    if @holder_to_category_id_map[account_holder].nil?
+      if amount < 0
+        return Category.find_by_category_name("Others").id
+      else
+        return Category.find_by_category_name("Sales").id
+      end
     else
-      return @cats[account_holder]
+      return @holder_to_category_id_map[account_holder]
     end
   end
 
-  def get_holder_to_category_map
+  def get_holder_to_category_id_map
     root_dir = Rails.root.to_s + '/Categorisation/*'
-    cat_files = Dir.glob(root_dir)
-    @cats = Hash.new
-    cat_files.each do |file|
-      cat = file.split("/").last
-      File.open(file, "r").each_line do |line|
-        holder = line.delete("\n")
-        @cats[holder] = cat unless holder.empty?
+    parent_categories = Dir.glob(root_dir)
+    cateory_map = Hash.new
+    category_data = get_categories_mapped_by_name
+
+    # Expense and Income folder
+    parent_categories.each do |directory|
+      # All files (Categories inside Income and Expense)
+      files = Dir.glob(directory + '/*')
+      puts directory
+      files.each do |file|
+        # Name of the Category files
+        puts file
+        category = file.split("/").last
+        # Content (Holders) of the Category
+        File.open(file, "r").each_line do |line|
+          holder = line.delete("\n")
+          cateory_map[holder] = category_data[category].id unless holder.empty?
+        end
       end
     end
-    cat_files
+    cateory_map
+  end
+
+  def get_categories_mapped_by_name
+    categories = Category.all
+    category_data = Hash.new
+    categories.each do |category|
+      category_data[category.category_name] = category
+    end
+    category_data
   end
 
   protected
