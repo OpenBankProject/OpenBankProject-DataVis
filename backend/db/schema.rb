@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120603102052) do
+ActiveRecord::Schema.define(:version => 20120603114213) do
 
   create_table "categories", :force => true do |t|
     t.string   "category_type"
@@ -19,6 +19,14 @@ ActiveRecord::Schema.define(:version => 20120603102052) do
     t.string   "category_name"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
+  end
+
+  create_table "daily_balance_income_expenses", :force => true do |t|
+    t.string   "balance"
+    t.string   "income"
+    t.string   "expense"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "senders", :force => true do |t|
@@ -55,6 +63,7 @@ ActiveRecord::Schema.define(:version => 20120603102052) do
     t.integer  "transaction_date_id"
     t.integer  "transaction_partner_id"
     t.string   "transaction_uuid"
+    t.string   "balance"
   end
 
 end

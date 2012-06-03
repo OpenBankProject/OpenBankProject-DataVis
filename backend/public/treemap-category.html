@@ -19,8 +19,7 @@ Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
     </script>
     <script type="text/javascript">
       function drawVisualization() {
-         //$.getJSON("http://obp-dataviz.herokuapp.com/apireader/index2.json", function(json){
-          $.getJSON("by_category.json", function(json){
+          $.getJSON("/apireader/get_categories.json", function(json){
 
           data = new google.visualization.DataTable()
           data.addColumn('string', 'Category');
