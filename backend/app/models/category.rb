@@ -6,4 +6,5 @@ class Category < ActiveRecord::Base
   def parent
   	Category.find_by_id(self.parent_category_id)
   end
+
 end
