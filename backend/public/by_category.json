@@ -1,4 +1,0 @@
-[{"name":"Expenses","volume":80,"parent":null,"heat":0},
-{"name":"Income","volume":6000,"parent":null,"heat":0},
-{"name":"Sales","volume":6000,"parent":"Income","heat":0},
-{"name":"Tax","volume":80,"parent":"Expenses","heat":0}]
