@@ -1,243 +1,79 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ruby on Rails: Welcome aboard</title>
-    <style type="text/css" media="screen">
-      body {
-        margin: 0;
-        margin-bottom: 25px;
-        padding: 0;
-        background-color: #f0f0f0;
-        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
-        font-size: 13px;
-        color: #333;
-      }
-
-      h1 {
-        font-size: 28px;
-        color: #000;
-      }
-
-      a  {color: #03c}
-      a:hover {
-        background-color: #03c;
-        color: white;
-        text-decoration: none;
-      }
-
-
-      #page {
-        background-color: #f0f0f0;
-        width: 750px;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      #content {
-        float: left;
-        background-color: white;
-        border: 3px solid #aaa;
-        border-top: none;
-        padding: 25px;
-        width: 500px;
-      }
-
-      #sidebar {
-        float: right;
-        width: 175px;
-      }
-
-      #footer {
-        clear: both;
-      }
-
-      #header, #about, #getting-started {
-        padding-left: 75px;
-        padding-right: 30px;
-      }
-
-
-      #header {
-        height: 64px;
-      }
-      #header h1, #header h2 {margin: 0}
-      #header h2 {
-        color: #888;
-        font-weight: normal;
-        font-size: 16px;
-      }
-
-
-      #about h3 {
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 14px;
-      }
-
-      #about-content {
-        background-color: #ffd;
-        border: 1px solid #fc0;
-        margin-left: -55px;
-        margin-right: -10px;
-      }
-      #about-content table {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 11px;
-        border-collapse: collapse;
-      }
-      #about-content td {
-        padding: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-      }
-      #about-content td.name  {color: #555}
-      #about-content td.value {color: #000}
-
-      #about-content ul {
-        padding: 0;
-        list-style-type: none;
-      }
-
-      #about-content.failure {
-        background-color: #fcc;
-        border: 1px solid #f00;
-      }
-      #about-content.failure p {
-        margin: 0;
-        padding: 10px;
-      }
-
-
-      #getting-started {
-        border-top: 1px solid #ccc;
-        margin-top: 25px;
-        padding-top: 15px;
-      }
-      #getting-started h1 {
-        margin: 0;
-        font-size: 20px;
-      }
-      #getting-started h2 {
-        margin: 0;
-        font-size: 14px;
-        font-weight: normal;
-        color: #333;
-        margin-bottom: 25px;
-      }
-      #getting-started ol {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #getting-started li {
-        font-size: 18px;
-        color: #888;
-        margin-bottom: 25px;
-      }
-      #getting-started li h2 {
-        margin: 0;
-        font-weight: normal;
-        font-size: 18px;
-        color: #333;
-      }
-      #getting-started li p {
-        color: #555;
-        font-size: 13px;
-      }
-
-
-      #sidebar ul {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #sidebar ul h3 {
-        margin-top: 25px;
-        font-size: 16px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #ccc;
-      }
-      #sidebar li {
-        list-style-type: none;
-      }
-      #sidebar ul.links li {
-        margin-bottom: 5px;
-      }
-
-      .filename {
-        font-style: italic;
-      }
-    </style>
-    <script type="text/javascript">
-      function about() {
-        info = document.getElementById('about-content');
-        if (window.XMLHttpRequest)
-          { xhr = new XMLHttpRequest(); }
-        else
-          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
-        xhr.open("GET","rails/info/properties",false);
-        xhr.send("");
-        info.innerHTML = xhr.responseText;
-        info.style.display = 'block'
-      }
-    </script>
+    <title>Open Bank Project Analytics</title>
+    <link rel="stylesheet" href="css/main.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/grow.js"></script>
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	
+	<script type="text/javascript" src="js/treemap.js"></script>
+	<script type="text/javascript" src="js/treemaptable.js"></script>
+	<script type="text/javascript" src="js/combotop.js"></script>
+	<script type="text/javascript" src="js/combotoptable.js"></script>
+	<script type="text/javascript" src="js/pie.js"></script>
+	<script type="text/javascript" src="js/pietable.js"></script>
   </head>
   <body>
-    <div id="page">
-      <div id="sidebar">
-        <ul id="sidebar-items">
-          <li>
-          </li>
-        </ul>
-      </div>
+    <div id="wrapper">
+	<div id="wrapperbg"></div>
+		<div id="header">
+			<center><img src="img/logo.png" width=150px></center><br><br>
+			<div id="line">
+				<span id="welcome">Welcome aboard</span>
+			</div>
+		</div>
+		<div id="charts">
+			<div class="chart" id="chart1">
+				<div class="chartheader">
+					Expenses, income and balance here:
+					<div class="grow" id="grow1"><img src="img/grow.png"></div>
+				</div>
+				<div id="combotop" class="chartcontent"></div>
+			</div>
 
-      <div id="content">
-        <div id="header">
-          <img src="http://www.openbankproject.com/static/images/OBP_logo.png" width= "100"/><br/>
-          <h1>Welcome aboard</h1>
-        </div>
+			<div class="chart" id="chart2">
+				<div class="chartheader">
+					Expenses and income over the last 3 months
+					<div class="grow" id="grow2"><img src="img/grow.png"></div>
+				</div>
+				<div id="combotoptable" class="chartcontent" style="margin-top:5px;"></div>
+			</div>
 
-        <div id="about">
-          <h3></h3>
-          <div id="about-content" style="display: none"></div>
-        </div>
+			<div class="chart" id="chart3">
+				<div class="chartheader">
+					Treemap Categories (Rightclick to go up)
+					<div class="grow" id="grow3"><img src="img/grow.png"></div>
+				</div>
+				 <div id="treemap" style="margin-top:5px;height:180px;"></div>
+			</div>
 
-        <div id="getting-started">
+			<div class="chart"  id="chart4">
+				<div class="chartheader">
+					Average expenses and income over the past 10 days
+					<div class="grow" id="grow4"><img src="img/grow.png"></div>
+				</div>
+				<div id="treemaptable" class="chartcontent" style="margin-top:5px;"></div>
+			</div>
 
+			<div class="chart"  id="chart5">
+				<div class="chartheader">
+					Payees in piechart per categories
+					<div class="grow"  id="grow5"><img src="img/grow.png"></div>
+				</div>
+				<div id="pie" style="margin-top:5px;height:180px;"></div>
+			</div>
 
-          <ol>
-            <li>
-              <h2>View all expenses, income and balance here:</h2>
-              <p><a href="combo-top.html">Try here</a></p>
-            </li>
-            <li>
-              <h2>View all expenses and income over the last 3 months</h2>
-              <p><a href="line-3months.html">Try here</a></p>
-            </li>
-            <li>
-              <h2>View all average expenses and income over the past 10 days</h2>
-              <p><a href="line-average10days.html">Try here</a></p>
-            </li>
-            <!--<li>
-              <h2>View Gauge for  average expenses over the last 10 days</h2>
-              <p><a href="gauge-average10days.html">Try here</a></p>
-            </li>-->
-            <li>
-              <h2>Treemap Categories</h2>
-              <p><a href="treemap-category.html">Try here</a></p>
-            </li>
-            <li>
-              <h2>View all payees in piechart per categories</h2>
-              <p><a href="pie-category.html">Try here</a></p>
-            </li>
-          </ol>
-          <form action="https://register.openbankproject.com" method="GET">
-          <input type="submit" value="join us">
-        </form>
-        </div>
-      </div>
-
-      <div id="footer">&nbsp;</div>
-    </div>
+			<div class="chart"  id="chart6" style="overflow-y:scroll;">
+				<div class="chartheader">
+					Clients
+					<div class="grow"  id="grow6"><img src="img/grow.png"></div>
+				</div>
+				<div id="pietable" style="margin-top:5px;"></div>
+			</div>
+		</div>
+		<a href="https://register.openbankproject.com/?" target="_blank"><div class="btn"><center>Join us</center></div></a>
+	</div>
+	<div id="darkbg"></div>
   </body>
 </html>
