@@ -59,9 +59,6 @@
 
 
       #header {
-        background-image: url("assets/rails.png");
-        background-repeat: no-repeat;
-        background-position: top left;
         height: 64px;
       }
       #header h1, #header h2 {margin: 0}
@@ -190,48 +187,53 @@
       <div id="sidebar">
         <ul id="sidebar-items">
           <li>
-            <h3>Browse the documentation</h3>
-            <ul class="links">
-              <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
-              <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
-              <li><a href="http://www.ruby-doc.org/core/">Ruby core</a></li>
-              <li><a href="http://www.ruby-doc.org/stdlib/">Ruby standard library</a></li>
-            </ul>
           </li>
         </ul>
       </div>
 
       <div id="content">
         <div id="header">
+          <img src="http://www.openbankproject.com/static/images/OBP_logo.png" width= "100"/><br/>
           <h1>Welcome aboard</h1>
-          <h2>You&rsquo;re riding Ruby on Rails!</h2>
         </div>
 
         <div id="about">
-          <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
+          <h3></h3>
           <div id="about-content" style="display: none"></div>
         </div>
 
         <div id="getting-started">
-          <h1>Getting started</h1>
-          <h2>Here&rsquo;s how to get rolling:</h2>
+
 
           <ol>
             <li>
-              <h2>Use <code>rails generate</code> to create your models and controllers</h2>
-              <p>To see all available options, run it without parameters.</p>
+              <h2>View all expenses, income and balance here:</h2>
+              <p><a href="combo-top.html">Try here</a></p>
             </li>
-
             <li>
-              <h2>Set up a default route and remove <span class="filename">public/index.html</span></h2>
-              <p>Routes are set up in <span class="filename">config/routes.rb</span>.</p>
+              <h2>View all expenses and income over the last 3 months</h2>
+              <p><a href="line-3months.html">Try here</a></p>
             </li>
-
             <li>
-              <h2>Create your database</h2>
-              <p>Run <code>rake db:create</code> to create your database. If you're not using SQLite (the default), edit <span class="filename">config/database.yml</span> with your username and password.</p>
+              <h2>View all average expenses and income over the past 10 days</h2>
+              <p><a href="line-average10days.html">Try here</a></p>
+            </li>
+            <!--<li>
+              <h2>View Gauge for  average expenses over the last 10 days</h2>
+              <p><a href="gauge-average10days.html">Try here</a></p>
+            </li>-->
+            <li>
+              <h2>Treemap Categories</h2>
+              <p><a href="treemap-category.html">Try here</a></p>
+            </li>
+            <li>
+              <h2>View all payees in piechart per categories</h2>
+              <p><a href="pie-category.html">Try here</a></p>
             </li>
           </ol>
+          <form action="https://register.openbankproject.com" method="GET">
+          <input type="submit" value="join us">
+        </form>
         </div>
       </div>
 

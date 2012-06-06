@@ -1,0 +1,2 @@
+module TransactionPartnersHelper
+end
