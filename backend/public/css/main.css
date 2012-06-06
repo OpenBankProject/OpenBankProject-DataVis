@@ -1,0 +1,120 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	margin:0;
+    background-color: #efefef;
+    font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
+    font-size: 13px;
+    color: #333;
+}
+#darkbg{
+	position:fixed;
+	top:0;
+	left:0;
+	background:rgba(0,0,0,.7);
+	width:100%;
+	height:100%;
+	display:none;
+	z-index:99;
+}
+#wrapper{
+	margin:0 auto;
+	padding:20px;
+	width:900px;
+}
+#wrapperbg{
+	position:fixed;
+	top:0;
+	margin-left:-20px;
+	background-color:white;
+	width:935px;
+	height:100%;
+	border-left:solid 3px #cacaca;
+	border-right:solid 3px #cacaca;
+	z-index:-99;
+}
+#line{
+	background-color:#cacaca;
+	height:3px;
+	width:900px;
+}
+#welcome{
+	position:absolute;
+	margin-top:-13px;
+	padding:0 10px;
+	font-size:20px;
+	color:#606060;
+	background-color:white;
+}
+#charts{
+	margin-top:30px;
+}
+.chart{
+	width:406px;
+	height:200px;
+	background-color:white;
+	float:left;
+	padding:10px;
+	margin:11px;
+	border:solid 1px #cacaca;
+	border-radius:7px;
+	overflow:hidden;
+}
+.chartbig{
+	float:none;
+	position:absolute;
+	left:50%;
+	margin-left:-203px;
+	top:25%;
+	z-index:100;
+}
+.chartheader{
+	width:100%;
+	height:30px;
+	margin-top:-10px;
+	margin-left:-10px;
+	padding:0 10px;
+	background-color:#4fb09c;
+	color:white;
+	font-size:13px;
+	line-height:30px;
+	z-index:50;
+}
+.chartcontent{
+	margin:0 auto;
+	height:180px;
+}
+.btn{
+	float:left;
+	margin:10px 500px 20px 10px;
+	width:75px;
+	height:30px;
+	line-height:30px;
+	background-color:#4fb09c;
+	border-radius:3px;
+	color:white;
+	border:solid 1px #2d907a;
+}
+.btn:hover{cursor:pointer;background-color:#6fd2be;border:solid 1px #0b7058;
+			background-image:-webkit-gradient(linear,left top,left bottom,from(#6fd2be),to(#4fb09c));
+			background-image:-moz-linear-gradient(top,#6fd2be,#4fb09c);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6fd2be', endColorstr='#4fb09c');
+}
+.grow{
+	float:right;
+	margin-top:4px;
+	margin-right:-5px;
+	height:20px;
+	width:20px;
+	background-color:#4fb09c;
+	border:solid 1px #2d907a;
+	border-radius:3px;
+	display:none;
+}
+.chart:hover .grow{display:block;}
+.grow:hover{cursor:pointer;background-color:#6fd2be;border:solid 1px #0b7058;
+			background-image:-webkit-gradient(linear,left top,left bottom,from(#6fd2be),to(#4fb09c));
+			background-image:-moz-linear-gradient(top,#6fd2be,#4fb09c);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6fd2be', endColorstr='#4fb09c');}

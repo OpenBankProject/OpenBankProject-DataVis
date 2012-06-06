@@ -1,0 +1,14 @@
+  [
+ {"name" : "2012/01",
+   "income": 5000,   
+   "expenses": 5000,
+   "balance" : 10000},
+ {"name" : "2012/02",
+   "income": 6000,   
+   "expenses": 5000,
+   "balance" : 11000},
+ {"name" : "2012/03",
+   "income": 6000,   
+   "expenses": 5000,
+   "balance" : 12000}
+   ]
